@@ -1,0 +1,30 @@
+
+name: Égaux sans ego
+founding_year: 2020
+address:
+  number: 1763
+  street: rue des Cyprès
+  province: Québec
+  country: Canada
+  postal_code: J6X47E
+
+history: |
+  Projets Égaux sans ego s'est créer à l'aide d'un mélange de plusieurs
+  idées, ressentis et d'une grande passion pour l'entraide. Nous avions
+  toutes en commun le désir de voir une société grandir et apprendre à
+  mieux se connaître, afin de ressentir le bien-être. En combinant nos
+  forces, nous avons pu découvrir à quel point, ensemble, nous pouvons
+  réaliser beaucoup plus qu'à nous seul.
+
+  Projets Égaux sans ego n'est pas seulement composé des co-fondatrices,
+  il a su voir le jour grâce à l'entraide venue de plusieurs personnes
+  autour de nous qui croyait en cet organisme. À vous tous, qui avez
+  contribué ou qui continue de le faire, nous vous remercions grandement !
+
+people:
+  - name: Alexandra Messely
+    title: Directrice générale
+  - name: Marilise Letendre
+    title: Directrice générale adjointe
+  - name: Catherine Laroche
+    title: Coordonnatrice Clinique
