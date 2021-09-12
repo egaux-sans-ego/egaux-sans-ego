@@ -1,6 +1,5 @@
 import * as React from "react"
-import Company from '../../content/company.yaml'
-import Services from '../../content/services.yaml'
+import { graphql, Link } from 'gatsby';
 import Layout from '../components/layouts/main'
 
 function shortenText(text, length) {
@@ -9,33 +8,47 @@ function shortenText(text, length) {
          : text.slice(0, length - 3) + "…";
 }
 
-
-
 function Service({value: service}) {
 
   const name = service.name;
+  const slug = service.slug;
   const description = shortenText(service.description, 150);
 
   return (<div>
-    <h3>{name}</h3>
+    <h3><Link to={`/services/${slug}`}>{name.toUpperCase()}</Link></h3>
     <p>{description}</p>
   </div>)
-
 }
 
 
 // markup
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+  const services = data.allService.nodes;
+  const company = data.company;
   return (
     <Layout>
-      <title>{Company.name}</title>
-      <h1>{Company.name}</h1>
+      <title>{company.name}</title>
+      <h1>{company.name}</h1>
 
       <h2>Services</h2>
-      {Services.servicesList.map(service => (<Service value={service} />))}
-
+      {services.map(service => (<Service value={service} />))}
     </Layout>
   )
 }
 
 export default IndexPage
+
+export const query = graphql`
+  query {
+    company {
+      name
+    }
+    allService {
+      nodes {
+        name
+        slug
+        description
+      }
+    }
+  }
+`

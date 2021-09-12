@@ -1,39 +1,27 @@
-inscription:
-  call_to_action: Inscrivez-vous dès maintenant
-  url: https://bookwhen.com/fr/egauxsansego
+- name: Accompagnement personnalisé
+  slug: accompagnement-personnalise
+  description: |
+     Dans le cadre de cet accompagnement, nous vous offrons soutien et conseils. Vous aurez
+     l’occasion d’apprendre de nouvelles façons d’être ou de faire, de modifier des comportements
+     et/ou des habitudes qui peuvent causer un mal-être, et ce, en fonction d’un plan personnalisé
+     axé sur vos objectifs personnels. Notez qu’il ne s’agit pas de psychothérapie mais d’un suivi
+     d’ordre éducatif qui se centre sur l'ici et maintenant.
 
+- name: Programme de prévention
+  slug: programme-de-prevention
+  description: |
+    L'objectif est que les clients voulant prévenir ou améliorer leur santé mentale augmentent
+    leur compréhension d'eux-mêmes par le biais de plusieurs ateliers cognitif
+ 
+- name: Programme éducatif (thématique sur la dépendance)
+  slug: programme-educatif-thematique-sur-la-dependance
+  description: |
+    L'objectif est d'amener les individus qui vivent avec le trouble de santé mentale et leurs
+    proches à avoir une meilleure compréhension de celui-ci.
 
-services:
-  accompagnement-personnalise:
-    &accompagnement-personnalise
-    name: Accompagnement personnalisé
-    description: |
-       Dans le cadre de cet accompagnement, nous vous offrons soutien et conseils. Vous aurez
-       l’occasion d’apprendre de nouvelles façons d’être ou de faire, de modifier des comportements
-       et/ou des habitudes qui peuvent causer un mal-être, et ce, en fonction d’un plan personnalisé
-       axé sur vos objectifs personnels. Notez qu’il ne s’agit pas de psychothérapie mais d’un suivi
-       d’ordre éducatif qui se centre sur l'ici et maintenant.
-  programme-de-prevention:
-    &programme-de-prevention
-    name: Programme de prévention
-    description: |
-      L'objectif est que les clients voulant prévenir ou améliorer leur santé mentale augmentent
-      leur compréhension d'eux-mêmes par le biais de plusieurs ateliers cognitif
-  programme-educatif-thematique-sur-la-dependance:
-    &programme-educatif-thematique-sur-la-dependance
-    name: Programme éducatif (thématique sur la dépendance)
-    description: |
-      L'objectif est d'amener les individus qui vivent avec le trouble de santé mentale et leurs
-      proches à avoir une meilleure compréhension de celui-ci.
-  cafe-rencontre:
-    &cafe-rencontre
-    name: Café rencontre
-    description: |
-      L'objectif est d'amener les participants à partager et échanger entre eux sur leur
-      expérience commune afin qu'ils puissent s'entraider.
+- name: Café rencontre
+  slug: cafe-rencontre
+  description: |
+    L'objectif est d'amener les participants à partager et échanger entre eux sur leur
+    expérience commune afin qu'ils puissent s'entraider.
 
-servicesList:
-  - *accompagnement-personnalise
-  - *programme-de-prevention
-  - *programme-educatif-thematique-sur-la-dependance
-  - *cafe-rencontre

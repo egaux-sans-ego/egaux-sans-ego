@@ -1,15 +1,18 @@
-import * as React from "react"
-import Company from '../../content/company.yaml'
-import Layout from '../components/layouts/main'
+import * as React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../components/layouts/main';
 
 // markup
-const ServicesPage = () => {
+const ServicesPage = ({ data }) => {
+
+  const company = data.company
+
   return (
     <Layout>
       <h2>Notre histoire</h2>
-      <p>{Company.history}</p>
+      <p>{company.history}</p>
  
-      {Company.people.map(person => (<div>
+      {company.people.map(person => (<div>
         <h2>{person.name.toUpperCase()}</h2>
         <p>{person.title}</p>
       </div>))}
@@ -18,3 +21,16 @@ const ServicesPage = () => {
 }
 
 export default ServicesPage
+
+export const query =
+  graphql`
+    query {
+      company {
+        history
+        people {
+          name
+          title
+        }
+      }
+    }
+  `
