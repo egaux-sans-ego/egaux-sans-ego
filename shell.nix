@@ -3,7 +3,7 @@ with import <nixpkgs> {};
 let
 
   nodeVersion =
-    "16";
+    "12";
 
   env =
     pkgs.mkShell {
