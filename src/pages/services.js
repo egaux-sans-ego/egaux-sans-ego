@@ -9,13 +9,15 @@ const ServicesPage = ({ data }) => {
 
   return (
     <Layout>
-      <a href="https://bookwhen.com/fr/egauxsansego">Inscrivez-vous dès maintenant</a>
-    
-      {services.map(service => (<div>
-        <h2><Link to={`/services/${service.slug}`}>{service.name.toUpperCase()}</Link></h2>
-        <p>{service.description}</p>
-      </div>))}
-    </Layout>
+      <section>
+        <a href="https://bookwhen.com/fr/egauxsansego">Inscrivez-vous dès maintenant</a>
+
+        {services.map(service => (<div>
+          <h2><Link to={`/services/${service.slug}`}>{service.name.toUpperCase()}</Link></h2>
+          <p>{service.description}</p>
+        </div>))}
+      </section>
+    </Layout >
   )
 }
 

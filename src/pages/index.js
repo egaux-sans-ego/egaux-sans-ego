@@ -3,12 +3,13 @@ import { graphql, Link } from 'gatsby';
 import Layout from '../components/layouts/main'
 
 function shortenText(text, length) {
-    return (text.length < length)
-         ? text
-         : text.slice(0, length - 3) + "…";
+  return (text.length < length)
+    ? text
+    : text.slice(0, length - 3) + "…";
 }
 
-function Service({value: service}) {
+function Service({ value: service }) {
+
 
   const name = service.name;
   const slug = service.slug;
@@ -27,11 +28,15 @@ const IndexPage = ({ data }) => {
   const company = data.company;
   return (
     <Layout>
-      <title>{company.name}</title>
-      <h1>{company.name}</h1>
-
-      <h2>Services</h2>
-      {services.map(service => (<Service value={service} />))}
+      <title>{Company.name}</title>
+      <h1>{Company.name}</h1>
+      
+      <section>
+        <h2>Services</h2>
+        <div>
+          {services.map(service => (<Service value={service} />))}
+        </div>
+      </section>
     </Layout>
   )
 }
