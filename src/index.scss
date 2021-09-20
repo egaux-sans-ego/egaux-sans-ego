@@ -156,7 +156,7 @@ a {
         padding-top: 20px;
 
     }
-    
+
     .flexFAQ {
         padding-bottom: 0px;
         margin-bottom: 20px;
@@ -167,13 +167,14 @@ a {
         }
 
         .flexMission {
-            background-color:rgb(177 147 139 / 11%);
+            background-color: rgb(177 147 139 / 11%);
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
             padding: 100px 00px;
+
             img {
                 width: 25%;
             }
@@ -322,16 +323,17 @@ footer {
     }
 
     .groupeImage {
-        background-image: url(./images/reprodsite_480x480.jpeg);
-        width: 480px;
-        height: 320px;
+        background-image: url(./images/membres.jpg);
+        width: 300px;
+        height: 300px;
         background-position: center;
         box-shadow: 20px 20px 0px #fff;
         background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .memberElement {
-        width: 20%;
+        width: 40%;
         text-align: center;
     }
 
@@ -356,9 +358,26 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-grow: 2;
 }
 
+.service.flexCol{
+    align-content: inherit;
+
+    .fElement:nth-of-type(odd){
+        /* background-color: blue; */
+        align-self: flex-start;
+    }
+    .fElement:nth-of-type(even){
+        /* background-color: red; */
+        align-self: flex-end;
+    }
+}
 .service {
+   
+
     h2 {
         padding-top: 15px;
         font-size: 1.5em;

@@ -14,8 +14,8 @@ const ServicesPage = ({ data }) => {
       <section class="flex bgLight flexCol service">
         {services.map(service => (<div id={service.slug} class="fElement">
           <h2 class="h2Smaller">{service.name}</h2>
-          <p> <img src={service.url}/> {service.description}</p>
-          <Link class="btnCTA" to={service.url}>En savoir plus</Link>
+          <p> <img src={service.img}/> {service.description}</p>
+          <a class="btnCTA" href={service.url}>En savoir plus</a>
         </div>))}
       </section>
     </Layout >
