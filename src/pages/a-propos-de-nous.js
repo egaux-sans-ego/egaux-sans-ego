@@ -9,13 +9,21 @@ const ServicesPage = ({ data }) => {
 
   return (
     <Layout>
-      <h2>Notre histoire</h2>
-      <p>{company.history}</p>
- 
-      {company.people.map(person => (<div>
-        <h2>{person.name.toUpperCase()}</h2>
-        <p>{person.title}</p>
-      </div>))}
+      <section class="flex flexCol">
+        <h2>Notre histoire</h2>
+        <div class="flexApropos">
+        <p class="smallP">{company.history}</p>
+        <div class="groupeImage"></div>
+        </div>
+      </section>
+
+      <section class="flex bgBlanc">
+        {company.people.map(person => (<div class="fElement memberElement">
+          <h2 class="h2Smaller">{person.name}</h2>
+          <img class="memberImg" src={person.img}/>
+          <p>{person.title}</p>
+        </div>))}
+      </section>
     </Layout>
   )
 }
@@ -30,6 +38,7 @@ export const query =
         people {
           name
           title
+          img
         }
       }
     }

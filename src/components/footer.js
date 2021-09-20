@@ -6,7 +6,7 @@ const year = new Date().getFullYear()
 const Footer = () => {
   return (
     <footer>
-      © {Company.name} {Company.founding_year} {year!==Company.founding_year?`- ${year}`:''}
+      <p>© {Company.name} {Company.founding_year} {year!==Company.founding_year?`- ${year}`:''}</p>
     </footer>
   )
 }

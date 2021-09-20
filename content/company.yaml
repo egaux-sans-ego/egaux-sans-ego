@@ -10,7 +10,7 @@ address:
 
 
 history: |
-  Projets Égaux sans ego s'est créer à l'aide d'un mélange de plusieurs
+  Projets Égaux sans ego s'est créé à l'aide d'un mélange de plusieurs
   idées, ressentis et d'une grande passion pour l'entraide. Nous avions
   toutes en commun le désir de voir une société grandir et apprendre à
   mieux se connaître, afin de ressentir le bien-être. En combinant nos
@@ -23,9 +23,12 @@ history: |
   contribué ou qui continue de le faire, nous vous remercions grandement !
 
 people:
-  - name: Alexandra Messely
-    title: Directrice générale
   - name: Marilise Letendre
-    title: Directrice générale adjointe
+    title: Directrice générale
+    img: ../images/Marilise_480x480.jpeg
+  - name: Alexandra Messely
+    title: Directrice générale adjointe 
+    img: ../images/Alexe_480x480.jpeg
   - name: Catherine Laroche
     title: Coordonnatrice Clinique
+    img: ../images/Cath_480x480.jpeg

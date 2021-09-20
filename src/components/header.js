@@ -1,11 +1,12 @@
 import * as React from "react"
 import { Link } from 'gatsby'
 import Company from '../../content/company.yaml'
+import Logo from '../images/logos/black.svg'
 
 const Header = () => {
   return (
     <header>
-      <h1>{Company.name}</h1>
+      <h1><img id="logoHeader" src={Logo} alt={Company.name}/></h1>
       <nav>
         <ul>
           <li><Link to='/'>Accueil</Link></li>
