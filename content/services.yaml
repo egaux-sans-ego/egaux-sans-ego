@@ -71,14 +71,3 @@
     Nous offrons les formations en groupe sur 5 rencontres.
     Nous sommes toutefois en mesure d’adapter notre présentation pour répondre à vos besoins.
 
-
-- name: Café rencontre
-  slug: cafe-rencontre
-  url: https://www.psylio.com/ca/professionals/catherine-laroche?lg=fr
-  img: ../images/img.jpg
-  short_description: |
-    L'objectif est d'amener les participants à partager et échanger entre eux sur leur expérience commune afin qu'ils puissent s'entraider.
-  description: |
-    L'objectif est d'amener les participants à partager et échanger entre eux sur leur
-    expérience commune afin qu'ils puissent s'entraider.
-
