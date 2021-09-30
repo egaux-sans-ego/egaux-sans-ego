@@ -363,20 +363,22 @@ footer {
     flex-grow: 2;
 }
 
-.service.flexCol{
+.service.flexCol {
     align-content: inherit;
 
-    .fElement:nth-of-type(odd){
+    .fElement:nth-of-type(odd) {
         /* background-color: blue; */
         align-self: flex-start;
     }
-    .fElement:nth-of-type(even){
+
+    .fElement:nth-of-type(even) {
         /* background-color: red; */
         align-self: flex-end;
     }
 }
+
 .service {
-   
+
 
     h2 {
         padding-top: 15px;
@@ -464,4 +466,117 @@ footer {
 * {
     animation: fadeInUp 0.5s ease;
     -webkit-animation: fadeInUp 0.5s ease;
+}
+
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .service h2,
+    .h2Smaller {
+        font-size: 1.2em;
+    }
+
+    .index section:first-of-type {
+        background-size: cover;
+    }
+
+    .flex {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .memberElement {
+            width: 80%;
+        }
+
+        .smallP {
+            width: 80%;
+        }
+
+    }
+
+    .index {
+        .flex {
+            .fElement {
+                width: 80%;
+            }
+        }
+
+        .flexFAQ {
+            .fElement {
+                width: 80%;
+            }
+        }
+    }
+
+    .flexFAQ {
+        flex-direction: column;
+
+        .flexMission {
+            width: 100%;
+        }
+    }
+
+    .service.flexCol {
+        .fElement {
+            width: 80%;
+            ;
+        }
+
+        .fElement:nth-of-type(odd) {
+            align-self: center;
+        }
+
+        .fElement:nth-of-type(even) {
+            align-self: center;
+        }
+    }
+
+    .flexApropos {
+        width: 100%;
+    }
+
+    .index {
+        .flexFAQ {
+            .flexMission{
+                flex-direction: column;
+            }
+        }
+    }
+
+    header{
+        height: auto;
+        flex-direction: column;
+        #logoHeader{
+            position: relative;
+            margin: 5px;
+        }
+        nav{
+            width: 100%;
+            ul{
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+                display: flex;
+                justify-content: space-evenly;
+                text-align: center;
+            }
+            margin-bottom: 5%;
+            li{    
+    
+                &+li {
+                    margin-left: 0px;
+                }
+            }
+        }
+        
+
+        
+    }
+
 }
