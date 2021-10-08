@@ -1,26 +1,36 @@
-import * as React from 'react';
+import React, {useMemo} from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/layouts/main';
 
 // markup
 const ServicesPage = ({ data }) => {
 
-  const company = data.company
+  console.log(data);
+
+  const company = useMemo(() => ({
+      history: data.companyYaml.history,
+      people: data.companyYaml.people.map(person => ({
+          ...person,
+          img: person.img.childImageSharp.fluid
+      }))
+  }), [data])
+
+  console.log(company)
 
   return (
     <Layout>
-      <section class="flex flexCol">
+      <section className="flex flexCol">
         <h2>Notre histoire</h2>
-        <div class="flexApropos">
-        <p class="smallP">{company.history}</p>
-        <div class="groupeImage"></div>
+        <div className="flexApropos">
+        <p className="smallP">{company.history}</p>
+        <div className="groupeImage"></div>
         </div>
       </section>
 
-      <section class="flex bgBlanc">
-        {company.people.map(person => (<div class="fElement memberElement">
-          <h2 class="h2Smaller">{person.name}</h2>
-          <img class="memberImg" src={person.img}/>
+      <section className="flex bgBlanc">
+        {company.people.map(person => (<div key={person.name} className="fElement memberElement">
+          <h2 className="h2Smaller">{person.name}</h2>
+          <img className="memberImg" srcSet={person.img.srcSet} alt={person.name}/>
           <p>{person.title}</p>
         </div>))}
       </section>
@@ -33,12 +43,18 @@ export default ServicesPage
 export const query =
   graphql`
     query {
-      company {
+      companyYaml {
         history
         people {
           name
           title
-          img
+          img {
+            childImageSharp {
+              fluid {
+                srcSet
+              }
+            }
+          }
         }
       }
     }

@@ -14,11 +14,11 @@ function Service({ value: service }) {
 
   const name = service.name;
   const slug = service.slug;
-  const description = service.short_description;
+  const description = service.short_description.childMarkdownRemark.html;
 
   return (<div class="fElement">
     <h3>{name}</h3>
-    <p>{description}</p>
+    <p dangerouslySetInnerHTML={{__html: description}} />
     <Link class="btnCTA" to={`/services#${slug}`}>En savoir plus</Link>
   </div>)
 }
@@ -26,8 +26,8 @@ function Service({ value: service }) {
 
 // markup
 const IndexPage = ({ data }) => {
-  const services = data.allService.nodes;
-  const company = data.company;
+  const services = data.allServicesYaml.nodes;
+  const company = data.companyYaml;
   return (
     <Layout>
       <div class="index">
@@ -81,14 +81,18 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    company {
+    companyYaml {
       name
     }
-    allService {
+    allServicesYaml {
       nodes {
         name
         slug
-        short_description
+        short_description {
+          childMarkdownRemark {
+            html
+          }
+        }
       }
     }
   }

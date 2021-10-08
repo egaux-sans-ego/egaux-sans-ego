@@ -18,7 +18,7 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sass",
     {
-      resolve: `gatsby-transformer-yaml`,
+      resolve: `gatsby-transformer-yaml-full`,
       options: {
         // Conditionally set the typeName so that we both use a lowercased and capitalized type name
         typeName: ({ node }) => {
@@ -26,8 +26,14 @@ module.exports = {
           if (name === `services`) {
             return `Service`
           }
+          if (name === `company`) {
+            return `Company`
+          }
           return name
         },
+        plugins: [
+          'gatsby-yaml-full-markdown'
+        ]
       },
     },
     {
@@ -41,13 +47,6 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "blog",
-        path: `${__dirname}/blog`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
         name: "services",
         path: `${__dirname}/content/services.yaml`,
       },
@@ -55,8 +54,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "company",
-        path: `${__dirname}/content/company.yaml`,
+        name: "companies",
+        path: `${__dirname}/content/company/company.yaml`,
       },
     },
     {

@@ -1,10 +1,10 @@
 - name: Accompagnement personnalisé
   slug: accompagnement-personnalise
   url: https://www.psylio.com/ca/professionals/catherine-laroche?lg=fr
-  img: ../images/img.jpg
-  short_description: |
+  img: ../src/images/member_Alexe.jpg
+  short_description: !markdown |
     Dans le cadre de cet accompagnement, nous vous offrons soutien et conseils. Vous aurez l’occasion d’apprendre de nouvelles façons d’être ou de faire, de  modifier des comportements et/ou des habitudes qui peuvent causer un mal-être, et ce, en fonction d’un plan personnalisé axé sur vos objectifs personnels. Notez qu’il ne s’agit pas de psychothérapie mais d’un suivi d’ordre éducatif qui se centre sur l' ici et maintenant. 
-  description: |
+  description: !markdown |
     Dans le cadre de cet accompagnement individuel, nous vous offrons soutien et conseils, dans un contexte sans jugement et ouvert au partage.
     Vous aurez l’occasion d’apprendre de nouvelles façons d’être ou de faire, de modifier des comportements et/ou des habitudes qui peuvent causer un mal-être, afin de retrouver un sentiment de bien-être et de compréhension de soi. 
     Cet accompagnement sera fait en fonction d’un plan personnalisé axé sur vos objectifs personnels que vous désirerez cibler.
@@ -21,10 +21,10 @@
 - name: Programme de prévention
   slug: programme-de-prevention
   url: https://www.psylio.com/ca/professionals/catherine-laroche?lg=fr
-  img: ../images/img.jpg
-  short_description: |
+  img: ../src/images/member_Alexe.jpg
+  short_description: !markdown |
     L'objectif est que les clients voulant prévenir ou améliorer leur santé mentale augmentent leur compréhension d'eux-mêmes par le biais de plusieurs ateliers cognitif.
-  description: |
+  description: !markdown |
     L'objectif est que les clients voulant prévenir ou améliorer leur santé mentale augmentent leur compréhension d'eux-mêmes par le biais de plusieurs ateliers cognitifs éducatifs.
 
     Le programme s’étale sur 12 ateliers touchant des sujets tels que la prévention, la compréhension de soi et de l’ego, les masques que nous portons, l’importance de se choisir pour finalement aller toucher à l’équilibre au quotidien. 
@@ -47,10 +47,10 @@
 - name: Programme éducatif (thématique sur la dépendance)
   slug: programme-educatif-thematique-sur-la-dependance
   url: https://www.psylio.com/ca/professionals/catherine-laroche?lg=fr
-  img: ../images/img.jpg
-  short_description: |
+  img: ../src/images/member_Alexe.jpg
+  short_description: !markdown |
     L'objectif est d'amener les individus qui vivent avec le trouble de santé mentale et leurs proches à avoir une meilleure compréhension de celui-ci. 
-  description: |
+  description: !markdown |
     L'objectif est d'amener les individus qui vivent avec le trouble de santé mentale et leurs proches à avoir une meilleure compréhension de celui-ci.
     Le programme éducatif axé sur la thématique de la dépendance s’offre en 5 ateliers, incluant des outils qui seront remis afin de faciliter la compréhension et la prise de conscience. 
     Le but est de travailler sur la communication, la gestion des émotions et sur l’estime de soi. 

@@ -1,5 +1,5 @@
 import * as React from "react"
-import Company from '../../content/company.yaml'
+import Company from '../../content/company/company.yaml'
 
 const year = new Date().getFullYear()
 

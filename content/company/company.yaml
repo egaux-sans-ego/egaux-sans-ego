@@ -25,7 +25,7 @@ history: |
 people:
   - name: Alexandra Messely
     title: Directrice générale 
-    img: ../images/Alexe_480x480.jpeg
+    img: ../../src/images/member_Alexe.jpg
   - name: Catherine Laroche
     title: Directrice générale adjointe
-    img: ../images/Cath_480x480.jpeg
+    img: ../../src/images/member_cath.jpg

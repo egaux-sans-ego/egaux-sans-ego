@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from 'gatsby'
-import Company from '../../content/company.yaml'
+import Company from '../../content/company/company.yaml'
 import Logo from '../images/logos/black.svg'
 
 const Header = () => {
