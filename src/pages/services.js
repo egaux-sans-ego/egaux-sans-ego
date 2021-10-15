@@ -42,6 +42,7 @@ export const query = graphql`
         img {
           publicURL
         }
+        url
         description {
           childMarkdownRemark {
             html

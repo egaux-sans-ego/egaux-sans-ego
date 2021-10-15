@@ -335,6 +335,10 @@ footer {
     .memberElement {
         width: 40%;
         text-align: center;
+
+        .memberImg {
+            width: 40%;
+        }
     }
 
     .smallP {
@@ -379,6 +383,28 @@ footer {
 
 .service {
 
+    .fElement{
+        p{
+            padding: 0px 55px;
+        }
+    }
+
+     img {
+        width: auto;
+        height: auto;
+        min-width: 200px;
+        min-height: 200px;
+        max-width: 300px;
+        max-height: 300px;
+        margin-right: 27px;
+        margin-bottom: 10px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        float: left;
+        margin-left: 55px;
+    }
+
+    
 
     h2 {
         padding-top: 15px;
@@ -394,13 +420,7 @@ footer {
         margin-left: 55px;
     }
 
-    p {
-        img {
-            width: 200px;
-            height: 200px;
-            margin-right: 27px;
-            margin-bottom: 27px;
-        }
+    p {      
 
         img:nth-of-type(even) {
             float: right;
@@ -492,6 +512,10 @@ footer {
 
         .memberElement {
             width: 80%;
+
+            .memberImg {
+                width: 80%;
+            }
         }
 
         .smallP {
@@ -521,7 +545,11 @@ footer {
             width: 100%;
         }
     }
+    .service{
+        img {
 
+        }
+    }
     .service.flexCol {
         .fElement {
             width: 80%;

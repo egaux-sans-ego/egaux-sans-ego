@@ -1,7 +1,7 @@
 - name: Accompagnement personnalisé
   slug: accompagnement-personnalise
   url: https://www.psylio.com/ca/professionals/catherine-laroche?lg=fr
-  img: ../src/images/member_Alexe.jpg
+  img: ../src/images/service_1_480x480.jpeg
   short_description: !markdown |
     Dans le cadre de cet accompagnement, nous vous offrons soutien et conseils. Vous aurez l’occasion d’apprendre de nouvelles façons d’être ou de faire, de  modifier des comportements et/ou des habitudes qui peuvent causer un mal-être, et ce, en fonction d’un plan personnalisé axé sur vos objectifs personnels. Notez qu’il ne s’agit pas de psychothérapie mais d’un suivi d’ordre éducatif qui se centre sur l' ici et maintenant. 
   description: !markdown |
@@ -21,7 +21,7 @@
 - name: Programme de prévention
   slug: programme-de-prevention
   url: https://www.psylio.com/ca/professionals/catherine-laroche?lg=fr
-  img: ../src/images/member_Alexe.jpg
+  img: ../src/images/service_2_240x240.jpeg
   short_description: !markdown |
     L'objectif est que les clients voulant prévenir ou améliorer leur santé mentale augmentent leur compréhension d'eux-mêmes par le biais de plusieurs ateliers cognitif.
   description: !markdown |
@@ -47,7 +47,7 @@
 - name: Programme éducatif (thématique sur la dépendance)
   slug: programme-educatif-thematique-sur-la-dependance
   url: https://www.psylio.com/ca/professionals/catherine-laroche?lg=fr
-  img: ../src/images/member_Alexe.jpg
+  img: ../src/images/service_3_240x240.jpeg
   short_description: !markdown |
     L'objectif est d'amener les individus qui vivent avec le trouble de santé mentale et leurs proches à avoir une meilleure compréhension de celui-ci. 
   description: !markdown |
