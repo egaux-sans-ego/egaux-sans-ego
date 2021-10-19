@@ -3,22 +3,14 @@ import { graphql, Link } from 'gatsby';
 import Layout from '../components/layouts/main'
 import logoPresentation from '../images/logos/projets_black.svg'
 
-function shortenText(text, length) {
-  return (text.length < length)
-    ? text
-    : text.slice(0, length - 3) + "…";
-}
-
 function Service({ value: service }) {
-
-
   const name = service.name;
   const slug = service.slug;
   const description = service.short_description.childMarkdownRemark.html;
 
   return (<div class="fElement">
     <h3>{name}</h3>
-    <p dangerouslySetInnerHTML={{__html: description}} />
+    <div dangerouslySetInnerHTML={{__html: description}} />
     <Link class="btnCTA" to={`/services#${slug}`}>En savoir plus</Link>
   </div>)
 }
@@ -26,6 +18,9 @@ function Service({ value: service }) {
 
 // markup
 const IndexPage = ({ data }) => {
+
+  console.log("INDEX DATA", data);
+
   const services = data.allServicesYaml.nodes;
   const company = data.companyYaml;
   return (
@@ -59,7 +54,7 @@ const IndexPage = ({ data }) => {
 
         <section class="flex flexFAQ">
           <div class="flexMission">
-            <img src={logoPresentation} />
+            <img src={logoPresentation} alt="Logo gros format" />
             <p>Projets Égaux sans ego est un organisme sans but lucratif qui œuvre dans le domaine des services sociaux. Notre mission est de rendre l’éducation sur les troubles de santé mentale accessible à la population générale, tout en sensibilisant aux enjeux associés.
 
               Notre approche préventive ainsi que notre accompagnement personnalisé aideront à diminuer les risques de développer un trouble de santé mentale et permettront de trouver les outils nécessaires pour atteindre les objectifs personnels de notre clientèle.</p>
@@ -69,7 +64,7 @@ const IndexPage = ({ data }) => {
         <section class="bgLight">
           <h2>Nos Services</h2>
           <div class="flex">
-            {services.map(service => (<Service value={service} />))}
+            {services.map(service => (<Service value={service} key={service.slug} />))}
           </div>
         </section>
       </div>

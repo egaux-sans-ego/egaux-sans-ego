@@ -1,19 +1,19 @@
 import React, {useMemo} from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import Layout from '../components/layouts/main';
 
 /// markup
 const ServicesPage = ({ data }) => {
 
-
   const services = useMemo(() =>
       data.allServicesYaml.nodes.map(service => ({
           ...service,
-          img: service.img.publicURL,
+          img: {
+              src: service.img.src.publicURL,
+              description: service.img.description
+          },
           description: service.description.childMarkdownRemark.html
-      })));
-
-  console.log(services);
+      })), [data]);
 
   return (
     <Layout>
@@ -22,7 +22,7 @@ const ServicesPage = ({ data }) => {
       <section className="flex bgLight flexCol service">
         {services.map(service => (<div id={service.slug} className="fElement">
           <h2 className="h2Smaller">{service.name}</h2>
-          <img src={service.img}/>
+          <img src={service.img.src} alt={service.img.description} />
           <div dangerouslySetInnerHTML={{__html: service.description}} />
           <a className="btnCTA" href={service.url}>En savoir plus</a>
         </div>))}
@@ -40,7 +40,10 @@ export const query = graphql`
         name
         slug
         img {
-          publicURL
+          src {
+            publicURL
+          }
+          description
         }
         url
         description {
