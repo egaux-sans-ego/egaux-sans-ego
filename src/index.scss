@@ -315,11 +315,12 @@ footer {
         margin: 30px;
         background-color: #fff;
         box-shadow: 20px 20px 0px rgb(177 147 139 / 11%);
+        padding: 20px 45px;
 
-        p {
+        /*  p {
             padding: 10px 55px 25px 55px;
 
-        }
+        } */
     }
 
     .groupeImage {
@@ -383,13 +384,7 @@ footer {
 
 .service {
 
-    .fElement{
-        p{
-            padding: 0px 55px;
-        }
-    }
-
-     img {
+    img {
         width: auto;
         height: auto;
         min-width: 200px;
@@ -401,26 +396,22 @@ footer {
         -o-object-fit: cover;
         object-fit: cover;
         float: left;
-        margin-left: 55px;
     }
 
-    
+
 
     h2 {
         padding-top: 15px;
         font-size: 1.5em;
         text-decoration: overline;
         text-align: left;
-        margin-left: 55px;
-        margin-top: 20px;
-
     }
 
     .btnCTA {
         margin-left: 55px;
     }
 
-    p {      
+    p {
 
         img:nth-of-type(even) {
             float: right;
@@ -491,6 +482,15 @@ footer {
 
 @media (max-width: 768px) {
 
+    /*     body {
+        margin: 0;
+        padding: 25px;
+        box-sizing: border-box;
+        max-width: 100vw;
+    }
+ */
+
+
     h1 {
         font-size: 2em;
     }
@@ -505,56 +505,55 @@ footer {
     }
 
     .flex {
-
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        .memberElement {
-            width: 80%;
-
-            .memberImg {
-                width: 80%;
-            }
+        .fElement {
+            box-shadow: none;
         }
-
-        .smallP {
-            width: 80%;
-        }
-
     }
 
     .index {
         .flex {
             .fElement {
-                width: 80%;
+                width: 100%;
             }
         }
 
         .flexFAQ {
             .fElement {
-                width: 80%;
+                width: 100%;
             }
         }
     }
 
-    .flexFAQ {
-        flex-direction: column;
 
-        .flexMission {
-            width: 100%;
-        }
-    }
-    .service{
-        img {
+    .service {
+        margin: 0;
+        padding: 25px;
+        box-sizing: border-box;
+        max-width: 100vw;
 
-        }
-    }
-    .service.flexCol {
         .fElement {
-            width: 80%;
-            ;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            img {
+                float: none;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .btnCTA {
+                margin: 0;
+            }
         }
+
+    }
+
+    .service.flexCol {
 
         .fElement:nth-of-type(odd) {
             align-self: center;
@@ -567,26 +566,38 @@ footer {
 
     .flexApropos {
         width: 100%;
+
+        .smallP {
+            width: 100%;
+        }
     }
 
     .index {
         .flexFAQ {
-            .flexMission{
+            .flexMission {
                 flex-direction: column;
+                margin: 0;
+                padding: 25px;
+                box-sizing: border-box;
+                max-width: 100vw;
             }
         }
     }
 
-    header{
+    header {
         height: auto;
         flex-direction: column;
-        #logoHeader{
+
+        #logoHeader {
             position: relative;
             margin: 5px;
         }
-        nav{
+
+        nav {
+
             width: 100%;
-            ul{
+
+            ul {
                 width: 100%;
                 margin: 0px;
                 padding: 0px;
@@ -594,17 +605,53 @@ footer {
                 justify-content: space-evenly;
                 text-align: center;
             }
+
             margin-bottom: 5%;
-            li{    
-    
+
+            li {
+
                 &+li {
                     margin-left: 0px;
                 }
             }
         }
-        
 
-        
+    }
+
+    .index .flexFAQ {
+        flex-direction: column;
+
+        .fElement{
+            box-shadow: none;
+        }
+
+        .flexMission {
+            width: 100%;
+
+            p {
+                width: 100%;
+            }
+        }
+    }
+
+    .flex {
+        .fElement {
+            align-self: center;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    }
+
+    footer {
+        text-align: center;
+
+        p {
+            margin: 0;
+            padding-bottom: 10px;
+        }
     }
 
 }
