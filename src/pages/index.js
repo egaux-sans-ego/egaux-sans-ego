@@ -19,8 +19,6 @@ function Service({ value: service }) {
 // markup
 const IndexPage = ({ data }) => {
 
-  console.log("INDEX DATA", data);
-
   const services = data.allServicesYaml.nodes;
   const company = data.companyYaml;
   return (

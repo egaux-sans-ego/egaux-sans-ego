@@ -5,17 +5,13 @@ import Layout from '../components/layouts/main';
 // markup
 const ServicesPage = ({ data }) => {
 
-  console.log(data);
-
   const company = useMemo(() => ({
-      history: data.companyYaml.history,
+      history: data.companyYaml.history.replace(/ +[!?:]/g, (token) => "\u00a0"+token[token.length - 1]),
       people: data.companyYaml.people.map(person => ({
           ...person,
           img: person.img.childImageSharp.fluid
       }))
   }), [data])
-
-  console.log(company)
 
   return (
     <Layout>
