@@ -1,74 +1,105 @@
-- name: Accompagnement personnalisé
-  slug: accompagnement-personnalise
+- name: Programme de prévention
+  slug: programme-de-prevention
   url: https://www.psylio.com/ca/professionals/catherine-laroche?lg=fr
   img:
     src: ../src/images/service_1_480x480.jpeg
     description: Personnes devant éoliennes
   short_description: !markdown |
-    Dans le cadre de cet accompagnement, nous vous offrons soutien et conseils. Vous aurez l’occasion d’apprendre de nouvelles façons d’être ou de faire, de  modifier des comportements et/ou des habitudes qui peuvent causer un mal-être, et ce, en fonction d’un plan personnalisé axé sur vos objectifs personnels. Notez qu’il ne s’agit pas de psychothérapie mais d’un suivi d’ordre éducatif qui se centre sur l' ici et maintenant. 
+    Apprendre pour mieux se comprendre
   description: !markdown |
-    Dans le cadre de cet accompagnement individuel, nous vous offrons soutien et conseils, dans un contexte sans jugement et ouvert au partage.
-    Vous aurez l’occasion d’apprendre de nouvelles façons d’être ou de faire, de modifier des comportements et/ou des habitudes qui peuvent causer un mal-être, afin de retrouver un sentiment de bien-être et de compréhension de soi. 
-    Cet accompagnement sera fait en fonction d’un plan personnalisé axé sur vos objectifs personnels que vous désirerez cibler.
-    
-    Notez qu’il ne s’agit pas de psychothérapie mais d’un suivi d’ordre éducatif qui se centre sur l’ici et maintenant. 
+    **Objectif**
+    * Améliorer sa compréhension de soi<br />pour éviter de vivre un trouble de<br />santé mentale ou une grande souffrance
 
-    **Ce service s’adresse&nbsp;:**
+    **Durée et modalité**
+    * 5 rencontres d'une heure
+    * Offert virtuellement en individuel
 
-    * Aux adolescents et aux adultes. Il est sous format individuel, en présentiel ou à distance. 
-    * Il est offert aux particuliers ainsi qu’aux entreprises qui désirent faire bénéficier un employé d’un accompagnement personnalisé. 
+    **Pour qui**
+    * Les adolescents et les adultes
 
+    **Contenus**
+    * Discussions et réflexions
+    * Outils de réflexion
 
+    **Thèmes abordés**
+    * La prévention
+    * La compréhension de soi et de l'égo
+    * Les masques de l'égo
+    * Bagage héréditaire
+    * Raison d'être
+    * L'équilibre au quotidien
 
-- name: Programme de prévention
-  slug: programme-de-prevention
+- name: Programmes éducatifs adaptés
+  slug: programmes-educatifs-adaptes
   url: https://www.psylio.com/ca/professionals/catherine-laroche?lg=fr
   img:
     src: ../src/images/service_2_240x240.jpeg
     description: Personne qui peint sur le sol
   short_description: !markdown |
-    L'objectif est que les clients voulant prévenir ou améliorer leur santé mentale augmentent leur compréhension d'eux-mêmes par le biais de plusieurs ateliers cognitif.
+    Cibler une problématique spécifique en lien avec la réalité actuelle
   description: !markdown |
-    L'objectif est que les clients voulant prévenir ou améliorer leur santé mentale augmentent leur compréhension d'eux-mêmes par le biais de plusieurs ateliers cognitifs éducatifs.
+    **Objectif général des programmes éducatifs**
+    <br />
+    Éduquer les clientèles cibles à améliorer leur santé<br />mentale en lien avec leur réalité actuelle. 
 
-    Le programme s’étale sur 12 ateliers touchant des sujets tels que la prévention, la compréhension de soi et de l’ego, les masques que nous portons, l’importance de se choisir pour finalement aller toucher à l’équilibre au quotidien. 
+    **<u>Programme éducatif : Confidence sur ma dépendance</u>**
+    <br />
+    **Objectif**
+    * Amener les individus à analyser et comprendre leur dépendance. 
+    **Durée et modalité**
+    * 5 ateliers d'une heure
+    * Offert virtuellement en individuel
+    * Offert en présentiel pour les groupes
+    **Pour qui?**
+    * Les gens vivant avec une problématique de dépendance
+    **Contenus**
+    * Discussions et réflexions
+    * Outils de réflexion
+    **Thèmes abordés**
+    * Profil de consommateur
+    * L'égo
+    * La communication
+    * La gestion des émotions
+    * L'estime de soi
 
-    Les ateliers sont accompagnés d’outils qui pourront aider à la compréhension et la prise de conscience.
+    **<u>Programme éducatif : Mon adolescence dans sa transparence</u>**<br/>
+    **Objectif**
+    * Accompagner les adolescents à mieux comprendre leur identité<br />afin d'être mieux outillé face à leur réalité. 
+    **Durée et modalité**
+    * 1 rencontre de groupe de 75 minutes
+    **Pour qui?**
+    * Les adolescents
+    **Contenus**
+    * Discussions et réflexions
+    * Outils de réflexion
+    **Thèmes abordés**
+    * Les masques de l'égo
+    * L'anxiété de performance
+    * L'anxiété social
+    * Les passions
 
-    Avoir une éducation de base sur la santé mentale permet une meilleure compréhension de soi et d’autrui au quotidien, d’être capable de désamorcer des situations avant qu’elles ne s’enveniment et permet d’être en meilleure forme quotidienne autant au niveau personnel que professionnel. 
-
-    **Ce service s’adresse&nbsp;:**
-
-    * Aux particuliers, adolescents et adultes. En rencontre individuelle, semi-privée et en groupe.
-    * Aux entreprises, autant celles qui désirent l’offrir à leurs employés qu’à leur clientèle. Nous pouvons offrir le programme en groupe, en 2,3 ou 5 rencontres, selon votre besoin. Les formations durant entre 1h30 à 3h selon le format choisi.
- 
-
-
- 
-- name: Programme éducatif (thématique sur la dépendance)
-  slug: programme-educatif-thematique-sur-la-dependance
+- name: Accompagnement personnalisé
+  slug: accompagnement-personnalise
   url: https://www.psylio.com/ca/professionals/catherine-laroche?lg=fr
   img:
     src: ../src/images/service_3_240x240.jpeg
     description: Personne qui écrit dans un cahier
   short_description: !markdown |
-    L'objectif est d'amener les individus qui vivent avec le trouble de santé mentale et leurs proches à avoir une meilleure compréhension de celui-ci. 
+    Désamorcer des comportements nuisibles qui affectent le bien-être au quotidien
   description: !markdown |
-    L'objectif est d'amener les individus qui vivent avec le trouble de santé mentale et leurs proches à avoir une meilleure compréhension de celui-ci.
-    Le programme éducatif axé sur la thématique de la dépendance s’offre en 5 ateliers, incluant des outils qui seront remis afin de faciliter la compréhension et la prise de conscience. 
-    Le but est de travailler sur la communication, la gestion des émotions et sur l’estime de soi. 
-
-    La dépendance touche énormément de gens, nous avons l’habitude de penser à l’alcoolisme et la toxicomanie mais celle-ci se cache sous diverses facettes plus ou moins bien vues par la société.  Par exemple, la consommation de personnes, d’amour, d’achats excessifs, de performances sans limite cache aussi une dépendance; une tentative de combler un vide, de fuir ou d’éviter. 
-    La dépendance peut être comprise et travaillée afin de vivre dans un mode de vie plus sain pour soi au quotidien.
-
-    Avoir une éducation de base sur la dépendance aide les gens à mieux comprendre leurs réactions et besoins quotidiens. De vivre de façon plus saine dans leur pleine capacité consciente. Une personne équilibrée est à même de pouvoir offrir la meilleure version d’elle-même dans toutes les sphères de sa vie.
-
-    Nous utilisons une approche simple où il est facile de se rattacher au contenu. Le programme est aussi pertinent lorsque la prise de conscience d’un trouble de dépendance est faite qu’en amont, comme dans un milieu de travail reconnu pour avoir un haut niveau de compétition. 
-
-
-    **Ce service s’adresse&nbsp;:**
-
-    * Aux personnes vivant avec la dépendance.
-    * Aux personnes côtoyant une personne vivant avec la dépendance et voulant mieux comprendre.
-    * Aux entreprises et aux maisons de thérapies. Nous offrons les formations en groupe sur 5 rencontres. Nous sommes toutefois en mesure d’adapter notre présentation pour répondre à vos besoins.
-
+    **Objectif**
+    * Mise en action d'un plan personnalisé suite<br />à l'identification des comportements nuisibles ciblés<br />par le client dans l'un des programmes. 
+    * Le plan personnalisé permet d'apprendre de nouvelles<br />façons d'être ou de faire, de modifier des comportements<br />et/ou des habitudes qui peuvent causer un mal-être, afin de<br />retrouver un sentiment de bien-être et de compréhension de soi. 
+    **Durée et modalité**
+    * L'accompagnement est fait en fonction d'un plan personnalisé<br />sur une période 3 mois.
+    <br /><br />
+    **Pour qui?**
+    * Les adolescents et les adultes
+    **Contenus**
+    * Discussions et réflexions
+    * Outils de réflexion
+    * Journal de bord
+    **Thèmes abordés**
+    * La gestion des émotions
+    * La communication
+    * L'estime de soi

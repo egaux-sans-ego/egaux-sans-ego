@@ -1,5 +1,4 @@
-
-name: Égaux sans ego
+name: Projets Égaux sans ego
 founding_year: 2020
 address:
   number: 1763
@@ -7,7 +6,6 @@ address:
   province: Québec
   country: Canada
   postal_code: J6X47E
-
 
 history: |
   Projets Égaux sans ego s'est créé à l'aide d'un mélange de plusieurs
@@ -27,5 +25,5 @@ people:
     title: Directrice générale
     img: ../../src/images/member_cath.jpg
   - name: Alexandra Messely
-    title: Directrice générale adjointe 
+    title: Directrice générale adjointe
     img: ../../src/images/member_Alexe.jpg
