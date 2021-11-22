@@ -32,8 +32,6 @@ const IndexPage = ({ data }) => {
             <h1>{company.name}</h1>
             <p class="catchPhrase">
               <span>Apprendre pour mieux se comprendre.</span>
-              <br />
-              <span>C'est les valeurs qui nous animent!</span>
             </p>
           </div>
         </section>
