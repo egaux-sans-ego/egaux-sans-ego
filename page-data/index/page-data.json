@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-index-js",
+    "path": "/",
+    "result": {"data":{"companyYaml":{"name":"Projets Égaux sans ego"},"allServicesYaml":{"nodes":[{"name":"Programme de prévention","slug":"programme-de-prevention","short_description":{"childMarkdownRemark":{"html":"<p>Apprendre pour mieux se comprendre</p>"}}},{"name":"Programmes éducatifs adaptés","slug":"programmes-educatifs-adaptes","short_description":{"childMarkdownRemark":{"html":"<p>Cibler une problématique spécifique en lien avec la réalité actuelle</p>"}}},{"name":"Accompagnement personnalisé","slug":"accompagnement-personnalise","short_description":{"childMarkdownRemark":{"html":"<p>Désamorcer des comportements nuisibles qui affectent le bien-être au quotidien</p>"}}}]}},"pageContext":{}},
+    "staticQueryHashes": []}
